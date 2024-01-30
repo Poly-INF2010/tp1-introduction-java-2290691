@@ -32,6 +32,7 @@ public class ShapeTest {
     @Test
     void rectangleDimCtor() {
         BaseShape rect = new Rectangle(new Point2d(5.0, 5.0));
+        System.out.println(rect.getCoords().size());
         assertTrue(rect.getCoords().size() >= 25);
     }
 

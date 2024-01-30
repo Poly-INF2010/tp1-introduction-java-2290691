@@ -2,6 +2,7 @@ package Shape;
 
 import Point.Point2d;
 
+import java.util.ArrayList;
 import java.util.Collection;
 
 public class Ellipse extends BaseShape {
@@ -35,6 +36,6 @@ public class Ellipse extends BaseShape {
      */
     @Override
     public Ellipse clone() {
-        return null;
+       return null;
     }
 }
