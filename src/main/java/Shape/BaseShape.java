@@ -71,9 +71,12 @@ public class BaseShape extends Transform implements Cloneable {
      */
     public BaseShape remove(Point2d coord) {
         List<Point2d> copyCoords = new ArrayList<>(this.coords);
-        for (Point2d point : copyCoords){
-            if (point.X() == coord.X() && point.Y() == coord.Y()){
+
+        for (Point2d point : copyCoords) {
+
+            if (point.equals(coord)) {
                 this.coords.remove(point);
+                break;
             }
         }
         return this;
