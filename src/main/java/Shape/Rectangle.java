@@ -14,7 +14,6 @@ public class Rectangle extends BaseShape {
         Point2d topLeft = new Point2d(-width/2, height/2);
         Point2d topRight = new Point2d(width/2, height/2);
         Point2d bottomLeft = new Point2d(-width/2, -height/2);
-        Point2d bottomRight = new Point2d(width/2, -height/2);
 
         for( double x = topLeft.X() ; x <= topRight.X(); x += 0.5)
         {

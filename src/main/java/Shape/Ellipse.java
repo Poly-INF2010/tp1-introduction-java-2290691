@@ -17,15 +17,15 @@ public class Ellipse extends BaseShape {
 
         for (double i = -a; i <= a; i += 0.5) {
             for (double j = -b; j <= b; j += 0.5) {
-                // Check if the point (i, j) is within the ellipse
+
                 double x = i;
                 double y = j;
 
-                // Use the parametric equations of the ellipse
+
                 double ellipseEquation = (x * x) / (a * a) + (y * y) / (b * b);
 
                 if (ellipseEquation <= 1.0) {
-                    // Add the point to the ellipse
+
                     this.add(new Point2d(i, j));
                 }
             }

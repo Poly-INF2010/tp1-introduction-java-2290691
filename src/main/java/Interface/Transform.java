@@ -35,7 +35,6 @@ public class Transform implements Rotate, Translate{
         Collection<Point2d> translatedCoords = new ArrayList<>();
 
         for (Point2d point : coords) {
-            // Use the existing translate method from Point2d
             Point2d translatedPoint = point.translate(translateVector);
             translatedCoords.add(translatedPoint);
         }

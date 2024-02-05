@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 public class BaseShape extends Transform implements Cloneable {
     private final Collection<Point2d> coords;
 
-//helper function to clone a list of points 
+
   public Collection<Point2d> cloneCoords(Collection<Point2d> coords) {
         return coords.stream().map(Point2d::clone).collect(Collectors.toList());
     }
